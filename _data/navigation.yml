@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "About"
+    url: /pages/about.html
+  - title: "Education & Experiences"
+    url: /pages/experiences.html
+  - title: "Projects"
+    url: /pages/projects.html
+  - title: "Publications"
+    url: /pages/publications.html
+#  - title: "CV"
+#    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
