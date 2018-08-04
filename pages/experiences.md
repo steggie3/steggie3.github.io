@@ -10,8 +10,8 @@ author_profile: true
 - AI Bootcamp for Machine Learning Engineers, deeplearning.ai, (July 2018)
 
 ## MOOC
-- CSMM.102x: Machine Learning, edX/Columbia University (Completed May 2018) ([Certificate](https://courses.edx.org/certificates/f3fa5973d38f4ea792a6106cf46de430))
-- Deep Learning Specialization, Coursera/deeplearning.ai (Completed March 2018) ([Certificates](https://www.coursera.org/account/accomplishments/specialization/EGQ8ZXRUN87M))
+- CSMM.102x: Machine Learning, edX/Columbia University (Completed May 2018) ([Certificate](https://courses.edx.org/certificates/f3fa5973d38f4ea792a6106cf46de430){:target="_blank"})
+- Deep Learning Specialization, Coursera/deeplearning.ai (Completed March 2018) ([All Certificates](https://www.coursera.org/account/accomplishments/specialization/EGQ8ZXRUN87M){:target="_blank"})
     - Neural Networks and Deep Learning
     - Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization
     - Structuring Machine Learning Projects
@@ -33,7 +33,7 @@ author_profile: true
 - B.S., Electrical Engineering, Taipei, Taiwan (2004 - 2008)
 
 ## Academic Experience
-- Research Assistant, with [Prof. Deming Chen](http://dchen.ece.illinois.edu/), University of Illinois at Urbana-Champaign (2008 - 2015)
+- Research Assistant, with [Prof. Deming Chen](http://dchen.ece.illinois.edu/){:target="_blank"}, University of Illinois at Urbana-Champaign (2008 - 2015)
 - Teaching Assistant, University of Illinois at Urbana-Champaign
     - ECE 527 System-on-Chip Design
     - ECE 412 Microcomputer Laboratory
