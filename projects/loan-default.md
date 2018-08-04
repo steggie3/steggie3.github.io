@@ -12,11 +12,12 @@ This is an exploratory project for me to apply different Machine Learning (ML) m
   + Normalization/standardization
   + Imputation
   + Feature expansion
-  + Feature reduction:
+  + Feature dimension reduction:
     + Feature hashing
     + Feature selection
     + Principal component analysis
-  + Feature discretization Random Forests and Gradient-Boosted Decision Trees
+    + Decision Tree Feature Importance
+  + Feature discretization with Random Forests and Gradient-Boosted Decision Trees
 + Machine Learning Models:
   + Logistic Regression
   + Decision Trees, Random Forests, Gradient-Boosted Decision Trees
@@ -44,9 +45,11 @@ The idea of using a hybrid model of decision tree ensembles and logistic regress
 
 I experimented with two types of decision tree ensembles, **Random Forests** and **Gradient-Boosted Decision Trees**. For both methods, I limited the tree depth to 6 and the number of trees to 10. I used the best hyperparameters I found to train the models. I also tried using only the discretized features as the input to the logistic regression model, or using the discretized features concatenated with the original features.
 
-For **Random Forests**, I extracted the decision path for each example from each tree. The decision paths are expressed as a vector of boolean values, indicating which subtree the decision path takes at each branch. These are used as the discretized features. The Random Forest model itself achieved an ROCAUC of 0.704 on the training set and 0.669 on the validation set. Using the discretized features alone, the best ROCAUC I obained after hyperparameter tuning was 0.680 on the validation set. Using concatenated features, I got 0.714, which is slightly better than the best ROCAUC I got from using the original features, 0.713!
+For **Random Forests**, I extracted the decision path for each example from each tree. The decision paths are expressed as a vector of boolean values, indicating which subtree the decision path takes at each branch. These are used as the discretized features. The Random Forest model itself achieved an ROCAUC of 0.704 on the training set and 0.669 on the validation set. Using the discretized features alone, the best ROCAUC I obained after hyperparameter tuning was 0.680 on the validation set. Using concatenated features, I got 0.714, slightly better than the best ROCAUC I got from using the original features, 0.713, and is the best ROCAUC I got in the entire series of experiments.
 
-For **Gradient-Boosted Decision Trees**, I followed the Facebook paper approach more closely. I used the [XGBoost](https://xgboost.readthedocs.io/en/latest/){:target="_blank"} implementation of gradient-boosted decision trees. I extracted the decision path's leaf node for each example from each tree. The leaf nodes are expressed as integers, which can be treated as categorical features. I then performed one-hot encoding on these categorical features and used them as the discretized features. The ROCAUC obatinaed from the XGBoost model itself is 0.789 on the training set and 0.702 on the validation set. Using discretized features alone, the best ROCAUC I obtained is 0.701 on the validation set. Using concatenated features, the best I got is also 0.701.
+For **Gradient-Boosted Decision Trees**, I followed the Facebook paper approach more closely. I used the [XGBoost](https://xgboost.readthedocs.io/en/latest/){:target="_blank"} implementation of gradient-boosted decision trees. I extracted the decision path's leaf node for each example from each tree. The leaf nodes are expressed as integers, which can be treated as categorical features. I then performed one-hot encoding on these categorical features and used them as the discretized features. The ROCAUC obtained from the XGBoost model itself is 0.789 on the training set and 0.702 on the validation set. Using discretized features alone, the best ROCAUC I obtained is 0.701 on the validation set. Using concatenated features, the best I got is also 0.701.
+
+Unfortunately, these techniques do not bring significant improvement on the model performance on this dataset as demonstrated in the Facebook paper. One hypothesis is that not many features have nonlinear relationships with the label.
 
 <figure>
   <img src="{{site.url}}/projects/loan-default/example_gbtree.png" alt="example_gbtree.png"/>
@@ -55,13 +58,14 @@ For **Gradient-Boosted Decision Trees**, I followed the Facebook paper approach 
 
 Please refer to [LDP 08 - Feature Discretization with Random Forest.ipynb](https://github.com/steggie3/loan-default-prediction/blob/master/LDP%2008%20-%20Feature%20Discretization%20with%20Random%20Forest.ipynb){:target="_blank"} and [LDP 11 - Feature Discretization with Gradient Boosted Decision Trees.ipynb](https://github.com/steggie3/loan-default-prediction/blob/master/LDP%2011%20-%20Feature%20Discretization%20with%20Gradient%20Boosted%20Decision%20Trees.ipynb){:target="_blank"} for experiment details.
 
-## Feature Reduction
+## Feature Dimension Reduction
 
 The dataset comes with 778 features and 105,471 entries. After performing one-hot encoding on categorical features, the number of features increased to 1,788, even more with feature expansion. For some ML models, it takes at least a few minutes or even up to hours to train on a personal computer. Therefore, I wanted to explore feature reduction techniques to reduce the number of features while retaining a high model performance. The techniques I tried are:
 - **Feature Hashing**
 - **Feature Selection**
 - **Principal Component Analysis (PCA)**
 - **Decision Tree Feature Importance**
+
 For each technique, I set the target number of features **k** to be [1000, 500, 200, 100, 50, 20], selected the features, trained a Logistic Regression model with these features, and plotted the model accuracy, ROCAUC, and PRAUC to observe the trend of model quality as k decreases.
 
 The first feature reduction technique I tried is **feature hashing**, also known as the *hashing trick*. Given a target number of features **k**, feature hashing uses a hash function to combine various original features into one column, resulting in a total of k columns. It usually works well for sparse features.
