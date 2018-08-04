@@ -98,4 +98,4 @@ For all four techniques, we can see that the ROCAUC gradually decreases as **k**
   <figcaption>Decision Tree Feature Importance experiment results of accuracy, ROCAUC, and PRAUC against different k.</figcaption>
 </figure>
 
-Please refer to [LDP 04 - Feature Reduction.ipynb](https://github.com/steggie3/loan-default-prediction/blob/master/LDP%2004%20-%20Feature%20Reduction.ipynb){:target="_blank"} and [LDP 06 - Feature Selection with Decision Trees.ipynb](https://github.com/steggie3/loan-default-prediction/blob/master/LDP%2006%20-%20Feature%20Selection%20with%20Decision%20Trees.ipynb){:target="_blank"} for experiment details.
+Please refer to [LDP 04 - Feature Dimension Reduction.ipynb](https://github.com/steggie3/loan-default-prediction/blob/master/LDP%2004%20-%20Feature%20Dimension%20Reduction.ipynb){:target="_blank"} and [LDP 06 - Feature Selection with Decision Trees.ipynb](https://github.com/steggie3/loan-default-prediction/blob/master/LDP%2006%20-%20Feature%20Selection%20with%20Decision%20Trees.ipynb){:target="_blank"} for experiment details.
