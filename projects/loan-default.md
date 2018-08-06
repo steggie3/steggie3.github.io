@@ -30,7 +30,7 @@ The data is from a Kaggle competition [Loan Default Prediction](https://www.kagg
 I started with data cleaning and data preprocessing, applied each of the ML model to the data, performed hyperparameter tuning to explore the potential of the models, and then analyzed the accuracy, Receiver Operating Characteristic (ROC) curves, and Precision-Recall (PR) curves and their respective Areas Under Curve (AUC) to evaluate the quality of the resulting models. As this dataset has highly unbalanced classes, ROCAUC or PRAUC are better metrics than the accuracy. I also applied different feature engineering techniques and compared the model performance. The detailed experiments and reports in the form of Jupyter notebooks are available [on GitHub](https://github.com/steggie3/loan-default-prediction). I will also present some highlights here in this post.
 
 <figure>
-  <img src="{{site.url}}/projects/loan-default/curves.png" alt="curves.png"/>
+  <img src="{{site.url}}/assets/images/loan-default/curves.png" alt="curves.png"/>
   <figcaption>Model statistics, ROC curve, and PR curve in one of the experiments.</figcaption>
 </figure>
 
@@ -39,7 +39,7 @@ I started with data cleaning and data preprocessing, applied each of the ML mode
 The idea of using a hybrid model of decision tree ensembles and logistic regression comes from the paper [Practical Lessons from Predicting Clicks on Ads at Facebook](http://quinonero.net/Publications/predicting-clicks-facebook.pdf). In the paper, they trained gradient-boosted decision tree model and used it to perform feature discretization. The output (leaf node) of each tree is used as a categorical feature and an input to the logistic regression model. It is observed in the paper that this greatly helps the logistic regression model to take account of the nonlinearity and improve the accuracy metrics. 
 
 <figure>
-  <img style="width:671px ! important;" src="{{site.url}}/projects/loan-default/hybrid_model.png" alt="hybrid_model.png"/>
+  <img style="width:671px ! important;" src="{{site.url}}/assets/images/loan-default/hybrid_model.png" alt="hybrid_model.png"/>
   <figcaption>Decision tree and logistic regression hybrid model from the Facebook paper.</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ For **Gradient-Boosted Decision Trees**, I followed the Facebook paper approach 
 Unfortunately, these techniques do not bring significant improvement on the model performance on this dataset as demonstrated in the Facebook paper. One hypothesis is that not many features have nonlinear relationships with the label.
 
 <figure>
-  <img src="{{site.url}}/projects/loan-default/example_gbtree.png" alt="example_gbtree.png"/>
+  <img src="{{site.url}}/assets/images/loan-default/example_gbtree.png" alt="example_gbtree.png"/>
   <figcaption>Part of one decision tree in a trained XGBoost model. A blue line indicates a "yes" branch and a red line indicates a "no" branch. Showing only a small part because of the figure resolution.</figcaption>
 </figure>
 
@@ -79,22 +79,22 @@ The last technique I tried is to use Decision Trees to perform feature selection
 For all four techniques, we can see that the ROCAUC gradually decreases as **k** decreases. The best ROCAUC occurs at **k**=1000, with values around 0.71. Interestingly, at **k**=20, feature hashing results in the lowest ROCAUC of 0.63, while decision tree feature importance results in the highest ROCAUC of 0.69, indicating that it preserved more information than the other three.
 
 <figure>
-  <img style="width:604px ! important;" src="{{site.url}}/projects/loan-default/feature_reduction_1.png" alt="feature_reduction_1.png"/>
+  <img style="width:604px ! important;" src="{{site.url}}/assets/images/loan-default/feature_reduction_1.png" alt="feature_reduction_1.png"/>
   <figcaption>Feature Hashing experiment results of accuracy, ROCAUC, and PRAUC against different k.</figcaption>
 </figure>
 
 <figure>
-  <img style="width:604px ! important;" src="{{site.url}}/projects/loan-default/feature_reduction_2.png" alt="feature_reduction_2.png"/>
+  <img style="width:604px ! important;" src="{{site.url}}/assets/images/loan-default/feature_reduction_2.png" alt="feature_reduction_2.png"/>
   <figcaption>Feature Selection experiment results of accuracy, ROCAUC, and PRAUC against different k.</figcaption>
 </figure>
 
 <figure>
-  <img style="width:604px ! important;" src="{{site.url}}/projects/loan-default/feature_reduction_3.png" alt="feature_reduction_3.png"/>
+  <img style="width:604px ! important;" src="{{site.url}}/assets/images/loan-default/feature_reduction_3.png" alt="feature_reduction_3.png"/>
   <figcaption>PCA experiment results of accuracy, ROCAUC, and PRAUC against different k.</figcaption>
 </figure>
 
 <figure>
-  <img style="width:604px ! important;" src="{{site.url}}/projects/loan-default/feature_reduction_4.png" alt="feature_reduction_4.png"/>
+  <img style="width:604px ! important;" src="{{site.url}}/assets/images/loan-default/feature_reduction_4.png" alt="feature_reduction_4.png"/>
   <figcaption>Decision Tree Feature Importance experiment results of accuracy, ROCAUC, and PRAUC against different k.</figcaption>
 </figure>
 
