@@ -54,3 +54,9 @@ To get a more quantitative evaluation on the results, I followed the YOLO paper 
   <img src="{{site.url}}/assets/images/goose-detection/goose_iou.png" alt="goose_iou.png"/>
   <figcaption>Bounding boxes of detected geese. Blue is the ground truth, and green is predicted.</figcaption>
 </figure>
+
+Some future work ideas:
+- Compute the IOU of predicted and ground-truth bounding boxes to get a quantitative metric.
+- Tune the bounding box confidence threshold to get better prediction results.
+- The cost function that YOLO optimizes for does not directly translate to mAP. It will be interesting to investigate the gap.
+- Adding more markers such as eyes and beaks of the geese. Maybe a face recognition algorithm can be incorporated.
