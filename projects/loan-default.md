@@ -30,7 +30,7 @@ The data is from a Kaggle competition [Loan Default Prediction](https://www.kagg
 I started with data cleaning and data preprocessing, applied each of the ML model to the data, performed hyperparameter tuning to explore the potential of the models, and then analyzed the accuracy, Receiver Operating Characteristic (ROC) curves, and Precision-Recall (PR) curves and their respective Areas Under Curve (AUC) to evaluate the quality of the resulting models. As this dataset has highly unbalanced classes, ROCAUC or PRAUC are better metrics than the accuracy. I also applied different feature engineering techniques and compared the model performance. The detailed experiments and reports in the form of Jupyter notebooks are available [on GitHub](https://github.com/steggie3/loan-default-prediction). I will also present some highlights here in this post.
 
 <figure>
-  <img src="{{site.url}}/assets/images/loan-default/curves.png" alt="curves.png"/>
+  <img style="width:726px ! important;" src="{{site.url}}/assets/images/loan-default/curves.png" alt="curves.png"/>
   <figcaption>Model statistics, ROC curve, and PR curve in one of the experiments.</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ The idea of using a hybrid model of decision tree ensembles and logistic regress
 
 I experimented with two types of decision tree ensembles, **Random Forests** and **Gradient-Boosted Decision Trees**. For both methods, I limited the tree depth to 6 and the number of trees to 10. I used the best hyperparameters I found to train the models. I also tried using only the discretized features as the input to the logistic regression model, or using the discretized features concatenated with the original features.
 
-For **Random Forests**, I extracted the decision path for each example from each tree. The decision paths are expressed as a vector of boolean values, indicating which subtree the decision path takes at each branch. These are used as the discretized features. The Random Forest model itself achieved an ROCAUC of 0.704 on the training set and 0.669 on the validation set. Using the discretized features alone, the best ROCAUC I obained after hyperparameter tuning was 0.680 on the validation set. Using concatenated features, I got 0.714, slightly better than the best ROCAUC I got from using the original features, 0.713, and is the best ROCAUC I got in the entire series of experiments.
+For **Random Forests**, I extracted the decision path for each example from each tree. The decision paths are expressed as a vector of boolean values, indicating which subtree the decision path takes at each branch. These are used as the discretized features. The Random Forest model itself achieved an ROCAUC of 0.704 on the training set and 0.669 on the validation set. Using the discretized features alone, the best ROCAUC I obtained after hyperparameter tuning was 0.680 on the validation set. Using concatenated features, I got 0.714, slightly better than the best ROCAUC I got from using the original features, 0.713, and is the best ROCAUC I got in the entire series of experiments.
 
 For **Gradient-Boosted Decision Trees**, I followed the Facebook paper approach more closely. I used the [XGBoost](https://xgboost.readthedocs.io/en/latest/){:target="_blank"} implementation of gradient-boosted decision trees. I extracted the decision path's leaf node for each example from each tree. The leaf nodes are expressed as integers, which can be treated as categorical features. I then performed one-hot encoding on these categorical features and used them as the discretized features. The ROCAUC obtained from the XGBoost model itself is 0.789 on the training set and 0.702 on the validation set. Using discretized features alone, the best ROCAUC I obtained is 0.701 on the validation set. Using concatenated features, the best I got is also 0.701.
 
@@ -72,7 +72,7 @@ The first feature reduction technique I tried is **feature hashing**, also known
 
 The second technique I tried is **feature selection**. Given the target number of features **k** and a *scoring function*, it will select the top k best-performing features with the highest scores. For this experiment, I used *f_classif* (ANOVA F-value) as my scoring function.
 
-**PCA** is the third technique I applied. PCA tranforms the features with a new basis that explains the most variance in the feature space. Selecting the top k principal components has a similar effect to selecting k best features, except that all features are mapped into a new space instead of remaining in the original form.
+**PCA** is the third technique I applied. PCA transforms the features with a new basis that explains the most variance in the feature space. Selecting the top k principal components has a similar effect to selecting k best features, except that all features are mapped into a new space instead of remaining in the original form.
 
 The last technique I tried is to use Decision Trees to perform feature selection. The importance of features is implied in the hierarchy of the tree. The [sklearn.tree.DecisionTreeClassifier](http://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html){:target="_blank"} conveniently gives an importance score to each feature. I selected the **k** features with the importance scores.
 

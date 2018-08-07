@@ -10,13 +10,13 @@ author_profile: true
 [Python/Tensorflow]
 Using the You Only Look Once (YOLO) object detection algorithm to mark the locations of goose faces in images. I'm an amateur photographer and I love Canada geese, so I made a [Goose Dataset](https://github.com/steggie3/goose-dataset){:target="_blank"} with my own photos and experimented on it.
 
-## The GANder Project
+## [The GANder Project](/projects/gander.html)
 [Python/Keras]
 Using Generative Adversarial Networks (GANs) to generate goose faces based on the Goose Dataset. The geese are not necessarily ganders (male geese) but the name fits.
 
 ## [Loan Default Prediction](/projects/loan-default.html)
 [Python/Keras]
-Applying machine learning models such as logistic regression, random forests, gradient-boosted decision trees ([XGBoost](https://xgboost.readthedocs.io/en/latest/){:target="_blank"}), SVM, nearest neighbors, and neural networks to predict the loan default probability. Also experimented with feature engineering techniques such as feature hasing, discretization, principal component analysis (PCA), etc.
+Applying machine learning models such as logistic regression, random forests, gradient-boosted decision trees ([XGBoost](https://xgboost.readthedocs.io/en/latest/){:target="_blank"}), SVM, nearest neighbors, and neural networks to predict the loan default probability. Also experimented with feature engineering techniques such as feature hashing, discretization, principal component analysis (PCA), etc.
 
 ## F-RankClass
 [C++/MATLAB]
@@ -28,11 +28,11 @@ Using SVM and neural networks to predict buy/sell events.
 
 ## Social Network Graph Partitioning
 [C++]
-Taking advantage of social network properties, performing hierarchicasl graph partitioning to make each subgraph feasible in size. This is a class project for ECE598YL Cloud Computing at UIUC in Fall 2010.
+Taking advantage of social network properties, performing hierarchical graph partitioning to make each subgraph feasible in size. This is a class project for ECE598YL Cloud Computing at UIUC in Fall 2010.
 
 ## Compact Modeling and Simulation of Emerging Transistors and Circuits
 [C++/MATLAB]
-Developing physics-based compact models of the newly proposed graphene nanoribbon transistors and transition metal dichalcogenide transistors.  This is my Ph.D. disseration at UIUC. For this work, I also have multiple journal and conference publications, and I released 2 open-source transistor models on nanohub.org, an open-source platform for nanotechnology research (see my [Publications](/pages/publications.html){:target="_blank"} page).
+Developing physics-based compact models of the newly proposed graphene nano-ribbon transistors and transition metal dichalcogenide transistors.  This is my Ph.D. dissertation at UIUC. For this work, I also have multiple journal and conference publications, and I released 2 open-source transistor models on nanohub.org, an open-source platform for nanotechnology research (see my [Publications](/pages/publications.html){:target="_blank"} page).
 
 ## Clock Tree Synthesis
 [C++]
@@ -52,5 +52,5 @@ Developing and implementing a high-level circuit synthesis framework on optimiza
 
 ## Comparative Study of Multi-Gate Transistor Designs
 [MATLAB]
-Survey, comparision, and simulation of multi-gate transistors including FinFET. This is a class project for ECE585 MOS Device Modeling and Design at UIUC in Fall 2012.
+Survey, comparison, and simulation of multi-gate transistors including FinFET. This is a class project for ECE585 MOS Device Modeling and Design at UIUC in Fall 2012.
 
