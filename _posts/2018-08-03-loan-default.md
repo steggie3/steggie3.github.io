@@ -1,9 +1,13 @@
 ---
-title: Loan Default Prediction Machine Learning Project
-permalink: /projects/loan-default.html
-layout: single
-classes: wide
-author_profile: true
+title:      Loan Default Prediction Machine Learning Project
+date:       2018-08-03 16:00:00 -0700
+categories: Tech
+tags:       [github, machine-learning, project]
+layout:     single
+classes:    wide
+permalink:  /projects/loan-default.html
+header:
+  teaser:   /assets/images/loan-default/teaser.png
 ---
 
 This is an exploratory project for me to apply different Machine Learning (ML) models and techniques and have a better understanding of how each of them work and interact with the data:
@@ -27,7 +31,7 @@ This is an exploratory project for me to apply different Machine Learning (ML) m
 
 The data is from a Kaggle competition [Loan Default Prediction](https://www.kaggle.com/c/loan-default-prediction){:target="_blank"}.
 
-I started with data cleaning and data preprocessing, applied each of the ML model to the data, performed hyperparameter tuning to explore the potential of the models, and then analyzed the accuracy, Receiver Operating Characteristic (ROC) curves, and Precision-Recall (PR) curves and their respective Areas Under Curve (AUC) to evaluate the quality of the resulting models. As this dataset has highly unbalanced classes, ROCAUC or PRAUC are better metrics than the accuracy. I also applied different feature engineering techniques and compared the model performance. The detailed experiments and reports in the form of Jupyter notebooks are available [on GitHub](https://github.com/steggie3/loan-default-prediction). I will also present some highlights here in this post.
+I started with data cleaning and data preprocessing, applied each of the ML model to the data, performed hyperparameter tuning to explore the potential of the models, and then analyzed the accuracy, Receiver Operating Characteristic (ROC) curves, and Precision-Recall (PR) curves and their respective Areas Under Curve (AUC) to evaluate the quality of the resulting models. As this dataset has highly unbalanced classes, ROCAUC or PRAUC are better metrics than the accuracy. I also applied different feature engineering techniques and compared the model performance. The detailed experiments and reports in the form of Jupyter notebooks are available [on GitHub](https://github.com/steggie3/loan-default-prediction){:target="_blank"}. I will also present some highlights here in this post.
 
 <figure>
   <img style="width:726px ! important;" src="{{site.url}}/assets/images/loan-default/curves.png" alt="curves.png"/>
@@ -99,3 +103,6 @@ For all four techniques, we can see that the ROCAUC gradually decreases as **k**
 </figure>
 
 Please refer to [LDP 04 - Feature Dimension Reduction.ipynb](https://github.com/steggie3/loan-default-prediction/blob/master/LDP%2004%20-%20Feature%20Dimension%20Reduction.ipynb){:target="_blank"} and [LDP 06 - Feature Selection with Decision Trees.ipynb](https://github.com/steggie3/loan-default-prediction/blob/master/LDP%2006%20-%20Feature%20Selection%20with%20Decision%20Trees.ipynb){:target="_blank"} for experiment details.
+
+## Resources
+- [Jupyter notebooks on GitHub](https://github.com/steggie3/loan-default-prediction){:target="_blank"}

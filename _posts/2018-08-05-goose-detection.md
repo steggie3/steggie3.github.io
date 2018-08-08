@@ -1,10 +1,13 @@
 ---
-title: Object Detection with Goose Dataset
-permalink: /projects/goose-detection.html
-layout: single
-classes: wide
-author_profile: true
-teaser: /assets/images/goose-detection/goose_iou.png
+title:      Object Detection with Goose Dataset
+date:       2018-08-05 22:08:00 -0700
+categories: Tech
+tags:       [machine-learning, project, computer-vision, object-detection, yolo]
+layout:     single
+classes:    wide
+permalink:  /projects/goose-detection.html
+header:
+  teaser:   /assets/images/goose-detection/teaser.jpg
 ---
 
 I based this project on the [darkflow](https://github.com/thtrieu/darkflow){:target="_blank"} implementation of the [YOLOv2](https://arxiv.org/abs/1612.08242){:target="_blank"} object detection algorithm. The output of the algorithm are bounding boxes of each detected object and their associated confidence scores. The input are images or videos.
@@ -46,6 +49,11 @@ After training for 500 epochs, the quality of the bounding boxes improved a lot.
 <figure>
   <img src="{{site.url}}/assets/images/goose-detection/goose_final.png" alt="goose_final.png"/>
   <figcaption>Final results of fine-tuning on the testing set. Both the center points and the bounding boxes are good for the ones that were detected.</figcaption>
+</figure>
+
+<figure>
+  <img src="{{site.url}}/assets/images/goose-detection/goose-mugshot-0563.jpg" alt="goose-mugshot-0563.jpg"/>
+  <figcaption>Showing one very well detected example.</figcaption>
 </figure>
 
 To get a more quantitative evaluation on the results, I followed the YOLO paper and used the *mean average precision (mAP)* as the metric. I used [this implementation of mAP calculation](https://github.com/Cartucho/mAP){:target="_blank"} to analyze my predictions. The mAP is 85.50%. Out of the 200 geese in the testing set, 171 were detected, and there were no false positives. For the 171 detected geese, the predicted bounding boxes are also visually close to the ground truth bounding boxes.

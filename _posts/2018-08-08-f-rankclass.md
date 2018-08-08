@@ -1,9 +1,13 @@
 ---
-title: F-RankClass
-permalink: /projects/f-rankclass.html
-layout: single
-classes: wide
-author_profile: true
+title:      F-RankClass
+date:       2018-08-08 00:47:00 -0700
+categories: Tech
+tags:       [machine-learning, project, data-mining]
+layout:     single
+classes:    wide
+permalink:  /projects/f-rankclass.html
+header:
+  teaser:   /assets/images/f-rankclass/UIUC.png
 ---
 
 F-RankClass stands for **F**eature-Enhanced **RankClass**. It is an algorithm for joint text and image classification. The F-RankClass project began as a class project for CS512: Data Mining Principles by [Prof. Jiawei Han](https://hanj.cs.illinois.edu/){:target="_blank"}, which I took at UIUC in Spring 2013. It is an extension of [RankClass](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.220.2406&rep=rep1&type=pdf){:target="_blank"}, a ranking-based classification algorithm proposed by Prof. Han's research group and published at KDD in 2011. Prof. Han was impressed with our class project, and encouraged us to polish it and submit it to International Conference on Data Mining (ICDM), and it got accepted and was published in December 2013.
