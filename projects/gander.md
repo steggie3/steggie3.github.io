@@ -167,7 +167,7 @@ I based my experiments on [another Keras implementation of GAN](https://github.c
 
 <figure>
   <img style="width:2000px ! important;" src="{{site.url}}/assets/images/gander/vaegan/epoch_1050.png" alt="epoch_1050.png"/>
-  <figcaption>Epoch 1,050. Among the well-formed goose faces, the images are more clear and the edges well-defined.</figcaption>
+  <figcaption>Epoch 1,050. Among the well-formed goose faces, the images are more clear and the edges well-defined. We can even see the eyes and the leathery texture of the beaks.</figcaption>
 </figure>
 
 ## Future Work Ideas

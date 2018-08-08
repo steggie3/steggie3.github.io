@@ -8,23 +8,23 @@ author_profile: true
 
 ## [Object Detection with Goose Dataset](/projects/goose-detection.html)
 [Python/Tensorflow]
-Using the You Only Look Once (YOLO) object detection algorithm to mark the locations of goose faces in images. I'm an amateur photographer and I love Canada geese, so I made a [Goose Dataset](https://github.com/steggie3/goose-dataset){:target="_blank"} with my own photos and experimented on it.
+Using the You Only Look Once (YOLO) object detection algorithm to mark the locations of goose faces in images. I'm an amateur photographer and I love Canada geese, so I made a [Goose Dataset](https://github.com/steggie3/goose-dataset){:target="_blank"} with my own photos and experimented on it. Done in July 2018.
 
 ## [The GANder Project](/projects/gander.html)
 [Python/Keras]
-Using Generative Adversarial Networks (GANs) to generate goose faces based on the Goose Dataset. The geese are not necessarily ganders (male geese) but the name fits.
+Using Generative Adversarial Networks (GANs), including GAN, WGAN, and VAE-GAN, to generate goose faces based on the Goose Dataset. The geese are not necessarily ganders (male geese) but the name fits. Done in July 2018.
 
 ## [Loan Default Prediction](/projects/loan-default.html)
 [Python/Keras]
-Applying machine learning models such as logistic regression, random forests, gradient-boosted decision trees ([XGBoost](https://xgboost.readthedocs.io/en/latest/){:target="_blank"}), SVM, nearest neighbors, and neural networks to predict the loan default probability. Also experimented with feature engineering techniques such as feature hashing, discretization, principal component analysis (PCA), etc.
+Applying machine learning models such as logistic regression, random forests, gradient-boosted decision trees ([XGBoost](https://xgboost.readthedocs.io/en/latest/){:target="_blank"}), SVM, nearest neighbors, and neural networks to predict the loan default probability. Also experimented with feature engineering techniques such as feature hashing, discretization, principal component analysis (PCA), etc. Done in May and June 2018.
 
-## F-RankClass
+## [F-RankClass](/projects/f-rankclass.html)
 [C++/MATLAB]
 Joint text-image document classification and mining on Wikipedia entries. This is a class project for CS512 Data Mining Principles at UIUC in Spring 2013 and has been [published at International Conference on Data Mining in December 2013](https://ieeexplore.ieee.org/abstract/document/6729588/){:target="_blank"}. 
 
 ## Algorithmic Stock Trading
 [C++/MATLAB/Tensorflow]
-Using SVM and neural networks to predict buy/sell events.
+Using SVM and neural networks to predict buy/sell events. This is an on-and-off side project from 2011 to 2016.
 
 ## Social Network Graph Partitioning
 [C++]
