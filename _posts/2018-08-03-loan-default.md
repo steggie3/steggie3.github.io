@@ -29,7 +29,7 @@ This is an exploratory project for me to apply different Machine Learning (ML) m
   + Support Vector Machines
   + Neural Networks
 
-The data is from a Kaggle competition [Loan Default Prediction](https://www.kaggle.com/c/loan-default-prediction){:target="_blank"}.
+The data is from a Kaggle competition [Loan Default Prediction](https://www.kaggle.com/c/loan-default-prediction){:target="_blank"}. This is originally a regression problem, predicting the percentage of loan not paid for, but I performed most of the experiments by making it a binary classification problem, i.e. default or not default, for my own exercise.
 
 I started with data cleaning and data preprocessing, applied each of the ML model to the data, performed hyperparameter tuning to explore the potential of the models, and then analyzed the accuracy, Receiver Operating Characteristic (ROC) curves, and Precision-Recall (PR) curves and their respective Areas Under Curve (AUC) to evaluate the quality of the resulting models. As this dataset has highly unbalanced classes, ROCAUC or PRAUC are better metrics than the accuracy. I also applied different feature engineering techniques and compared the model performance. The detailed experiments and reports in the form of Jupyter notebooks are available [on GitHub](https://github.com/steggie3/loan-default-prediction){:target="_blank"}. I will also present some highlights here in this post.
 
@@ -103,6 +103,11 @@ For all four techniques, we can see that the ROCAUC gradually decreases as **k**
 </figure>
 
 Please refer to [LDP 04 - Feature Dimension Reduction.ipynb](https://github.com/steggie3/loan-default-prediction/blob/master/LDP%2004%20-%20Feature%20Dimension%20Reduction.ipynb){:target="_blank"} and [LDP 06 - Feature Selection with Decision Trees.ipynb](https://github.com/steggie3/loan-default-prediction/blob/master/LDP%2006%20-%20Feature%20Selection%20with%20Decision%20Trees.ipynb){:target="_blank"} for experiment details.
+
+## Future Work Ideas
+- Because I ran the experiments on a personal computer, I had limited computation power, and it limited my search techniques for the best hyperparameters. For example, if all experiments were done with 5-fold cross validation instead of just one, the hyperparameters selected would likely be better. I also tended to tune one hyperparameter at a time, but ideally it would be better to consider the interactions of hyperparameters and perform grid search or random search. 
+- The best results in terms of ROCAUC I obtained is from logistic regression. Theoretically speaking, logistic regression is a subset of neural networks because it consists of one single neuron, and I should be able to do better with neural networks. Due to the computation time required, I did not spend more time to explore all possible architectures.
+- Work on the original regression problem.
 
 ## Resources
 - [Jupyter notebooks on GitHub](https://github.com/steggie3/loan-default-prediction){:target="_blank"}

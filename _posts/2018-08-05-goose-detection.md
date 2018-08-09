@@ -10,7 +10,7 @@ header:
   teaser:   /assets/images/goose-detection/teaser.jpg
 ---
 
-I based this project on the [darkflow](https://github.com/thtrieu/darkflow){:target="_blank"} implementation of the [YOLOv2](https://arxiv.org/abs/1612.08242){:target="_blank"} object detection algorithm. The output of the algorithm are bounding boxes of each detected object and their associated confidence scores. The input are images or videos.
+I based this project on the [thtrieu/darkflow](https://github.com/thtrieu/darkflow){:target="_blank"} implementation of the [YOLOv2](https://arxiv.org/abs/1612.08242){:target="_blank"} object detection algorithm. The output of the algorithm are bounding boxes of each detected object and their associated confidence scores. The input are images or videos.
 
 Both *darkflow* and *YOLOv2* provide pretrained weights for several neural network architectures. By loading the pretrained weights, I was already able to detect things. For example, I used the *tiny-yolo-voc* architecture (a lightweight, 20-class object detection network) and it was able to detect a cat in an image:
 
@@ -67,4 +67,5 @@ Some future work ideas:
 - Compute the IOU of predicted and ground-truth bounding boxes to get a quantitative metric.
 - Tune the bounding box confidence threshold to get better prediction results.
 - The cost function that YOLO optimizes for does not directly translate to mAP. It will be interesting to investigate the gap.
+- Perform data augmentation to generate more training data.
 - Adding more markers such as eyes and beaks of the geese. Maybe a face recognition algorithm can be incorporated.
