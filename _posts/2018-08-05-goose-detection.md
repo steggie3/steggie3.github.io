@@ -10,7 +10,7 @@ header:
   teaser:   /assets/images/goose-detection/teaser.jpg
 ---
 
-This is a real-time object detection system based on the You-Look-Only-Once (YOLO) deep learning model. I did a similar project at the AI Bootcamp for Machine Learning Engineers hosted by deeplearning.ai. After the bootcamp, I decided to dig deeper in various aspects of the system with my own dataset.
+This is a real-time object detection system based on the You-Look-Only-Once (YOLO) deep learning model. I did a similar project at the AI Bootcamp for Machine Learning Engineers hosted by deeplearning.ai, doing literature and resource survey, preparing the dataset, training the model, and deploying the model. After the bootcamp, I decided to dig deeper in various aspects of the system with my own dataset.
 
 ## Model Training
 
