@@ -10,6 +10,10 @@ header:
   teaser:   /assets/images/goose-detection/teaser.jpg
 ---
 
+This is a real-time object detection system based on the You-Look-Only-Once (YOLO) deep learning model. I did a similar project at the AI Bootcamp for Machine Learning Engineers hosted by deeplearning.ai. After the bootcamp, I decided to dig deeper in various aspects of the system with my own dataset.
+
+## Model Training
+
 I based this project on the [thtrieu/darkflow](https://github.com/thtrieu/darkflow){:target="_blank"} implementation of the [YOLOv2](https://arxiv.org/abs/1612.08242){:target="_blank"} object detection algorithm. The output of the algorithm are bounding boxes of each detected object and their associated confidence scores. The input are images or videos.
 
 Both *darkflow* and *YOLOv2* provide pretrained weights for several neural network architectures. By loading the pretrained weights, I was already able to detect things. For example, I used the *tiny-yolo-voc* architecture (a lightweight, 20-class object detection network) and it was able to detect a cat in an image:
@@ -69,3 +73,23 @@ Some future work ideas:
 - The cost function that YOLO optimizes for does not directly translate to mAP. It will be interesting to investigate the gap.
 - Perform data augmentation to generate more training data.
 - Adding more markers such as eyes and beaks of the geese. Maybe a face recognition algorithm can be incorporated.
+
+## Deployment
+
+I used the [szaza/android-yolo-v2](https://github.com/szaza/android-yolo-v2){:target="_blank"} Android YOLOv2 implementation. I exported the trained weights to a protobuf file to use with the YOLOv2 app. I can now use my Android phone's camera for goose detection!
+
+I do not have immediate access to live geese, so I tried the app with a goose decoy. To make the scene look more similar to the training set, I put the decoy on the lawn. Sadly, the decoy is still too different from real geese, and the model doesn't recognize it as a goose. It could also indicate some overfitting happening.
+
+<figure>
+  <img src="{{site.url}}/assets/images/goose-detection/android_test_01.png" alt="android_test_01.png"/>
+  <figcaption>The goose decoy isn't recognized as a goose by the Android YOLOv2 app.</figcaption>
+</figure>
+
+Next, I tried it with the Goose Dataset images displayed on a monitor. This time, the app is able to detect a goose head.
+
+<figure>
+  <img src="{{site.url}}/assets/images/goose-detection/android_test_02.png" alt="android_test_02.png"/>
+  <figcaption>The goose head recognized by the Android YOLOv2 app. See the orange bounding box on the phone.</figcaption>
+</figure>
+
+The next step is to further fine-tune the model and try it in the field with live geese.
