@@ -26,6 +26,6 @@ I felt that a lot of the ground-breaking tech products today involve data scienc
 Apart from the technical stuff, I enjoy [birding](http://feathery-friends.tumblr.com/){:target="_blank"}, [photography](https://www.flickr.com/photos/thesteggie/albums){:target="_blank"}, gardening, and Wikipedia surfing in my free time.
 
 <figure>
-  <img src="{{site.url}}/assets/images/about/birding.jpg" alt="birding.jpg"/>
+  <img src="{{site.url}}/assets/images/about/birding.JPG" alt="birding.JPG"/>
   <figcaption>Photographing Canada geese on Northerly Island in Chicago, IL. </figcaption>
 </figure>
