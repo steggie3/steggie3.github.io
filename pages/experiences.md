@@ -19,11 +19,11 @@ author_profile: true
     - Sequence Models
 
 ## Work Experience
-- R&D Engineer, Sr. II, Synopsys, Inc., Mountain View, CA (November 2015 - February 2018)
+- R&D Engineer (Software), Sr. II, Synopsys, Inc., Mountain View, CA (November 2015 - February 2018)
     Worked on a mixed-language (SystemVerilog/VHDL) compiler for the ZeBu emulation system, including: 
     - Optimization and transformation on computation graphs and circuit data structures, achieving 27% running time improvement, 11% peak memory usage reduction, 35% emulation resource reduction. (C++)
     - Automatic test environment generation for time-series simulation and formal verification, creating a seamless testing and debugging framework, greatly accelerating the work flow for R&D and application engineers. (C++/Tcl)
-- Research Intern, Strategic Computer-Aided Design Labs, Intel Corporation, Hillsboro, OR (August 2011 - December 2011)
+- Research Intern (Software), Strategic Computer-Aided Design Labs, Intel Corporation, Hillsboro, OR (August 2011 - December 2011)
     - Investigated process variation under near-threshold voltage circuit operations.
     - Performed numerical simulation and mathematical analysis of the most probable point theory. (C++/MATLAB)
     - Performed experiments on discrete gate-sizing optimization. (Perl/Tcl)

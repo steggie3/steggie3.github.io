@@ -34,9 +34,9 @@ Taking advantage of social network properties, performing hierarchical graph par
 [C++/MATLAB]
 Developing physics-based compact models of the newly proposed graphene nano-ribbon transistors and transition metal dichalcogenide transistors.  This is my Ph.D. dissertation at UIUC. For this work, I also have multiple journal and conference publications, and I released 2 open-source transistor models on nanohub.org, an open-source platform for nanotechnology research (see my [Publications](/pages/publications.html){:target="_blank"} page).
 
-## Clock Tree Synthesis
+## Clock Tree Routing
 [C++]
-Clock tree synthesis focusing on robust skew and slew control via delay and slew modeling, with exploration of buffer insertion and buffer sizing in clock trees. This is my M.S. thesis at UIUC and was [published at Design Automation Conference in June 2010](https://dl.acm.org/citation.cfm?id=1837297){:target="_blank"}.
+Clock tree routing focusing on robust skew and slew control via delay and slew modeling, with exploration of buffer insertion and buffer sizing in clock trees. This is my M.S. thesis at UIUC and was [published at Design Automation Conference in June 2010](https://dl.acm.org/citation.cfm?id=1837297){:target="_blank"}.
 
 ## Numerical Circuit Simulator
 [C++]
