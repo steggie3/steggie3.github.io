@@ -6,9 +6,9 @@ classes: wide
 author_profile: true
 ---
 
-## [Object Detection with Goose Dataset](/projects/goose-detection.html)
+## [Real-Time Object Detection](/projects/object-detection.html)
 [Python/Tensorflow]
-Using the You Only Look Once (YOLO) object detection algorithm to mark the locations of goose faces in images. I'm an amateur photographer and I love Canada geese, so I made a [Goose Dataset](https://github.com/steggie3/goose-dataset){:target="_blank"} with my own photos and experimented on it. Done in July 2018.
+Using the You Only Look Once (YOLO) object detection algorithm to mark the locations of geese in images. I'm an amateur photographer and I love Canada geese, so I made a [Goose Dataset](https://github.com/steggie3/goose-dataset){:target="_blank"} with my own photos and experimented on it. Done in July 2018.
 
 ## [The GANder Project](/projects/gander.html)
 [Python/Keras]
