@@ -7,7 +7,7 @@ author_profile: true
 ---
 
 ## Training Programs
-- AI Bootcamp for Machine Learning Engineers, deeplearning.ai, (July 2018)
+- AI Bootcamp for Machine Learning Engineers, deeplearning.ai, (July 2018) ([Certificate](/assets/images/certificates/AI_MLE.jpg){:target="_blank"})
 
 ## MOOC
 - CSMM.102x: Machine Learning, edX/Columbia University (Completed May 2018) ([Certificate](https://courses.edx.org/certificates/f3fa5973d38f4ea792a6106cf46de430){:target="_blank"})
