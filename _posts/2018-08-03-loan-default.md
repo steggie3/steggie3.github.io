@@ -106,7 +106,7 @@ Please refer to [LDP 04 - Feature Dimension Reduction.ipynb](https://github.com/
 
 ## Future Work Ideas
 - Because I ran the experiments on a personal computer, I had limited computation power, and it limited my search techniques for the best hyperparameters. For example, if all experiments were done with 5-fold cross validation instead of just one, the hyperparameters selected would likely be better. I also tended to tune one hyperparameter at a time, but ideally it would be better to consider the interactions of hyperparameters and perform grid search or random search. 
-- The best results in terms of ROCAUC I obtained is from logistic regression. Theoretically speaking, logistic regression is a subset of neural networks because it consists of one single neuron, and I should be able to do better with neural networks. Due to the computation time required, I did not spend more time to explore all possible architectures.
+- The best results in terms of ROCAUC I obtained is from logistic regression. Theoretically speaking, logistic regression is a subset of neural networks because it consists of one single neuron, and I should be able to do better with neural networks. Due to the computation time required, I haven't spent enough time to explore all possible architectures.
 - Work on the original regression problem.
 
 ## Resources
