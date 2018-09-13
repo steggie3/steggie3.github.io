@@ -6,7 +6,7 @@ classes: wide
 author_profile: true
 ---
 
-I am a software developer [seeking full-time **software engineering** positions on **machine-learning** and/or **data science**](/assets/pdf/resumes/Resume_Christine_Chen_MLE_Sep_18.pdf){:target="_blank"}. I have worked on several related projects and taken a few courses in my spare time and am aiming to advance my career in the machine-learning and data science area.
+I am a software developer [seeking full-time **software engineering** positions on **machine-learning** and/or **data science**](/assets/pdf/resumes/Resume_Christine_Chen_MLE_Sep12_18.pdf){:target="_blank"}. I have worked on several related projects and taken a few courses in my spare time and am aiming to advance my career in the machine-learning and data science area.
 
 <figure>
   <img src="{{site.url}}/assets/images/about/me.png" alt="me.png"/>
