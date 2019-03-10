@@ -23,6 +23,8 @@ After earning my Ph.D. degree in 2015, I joined [Synopsys's ZeBu Compile Team](h
 
 I observed that a lot of the ground-breaking tech products today involve data science and machine learning. Machine learning is also a fast-growing field, opening up new opportunities for products never thought of before every day. I realized that although I focused on EDA previously, I have been interested in data science and machine learning and worked on related projects for a long time. I left Synopsys in 2018 to dedicate more time on solidifying my machine learning and deep learning skills. 
 
+I joined the Onboarding Team 🚀 at Twitter in 2019 where I get to work on applying machine learning at scale to improve new user experience and retention rate.
+
 Apart from the technical stuff, I enjoy [birding](http://feathery-friends.tumblr.com/){:target="_blank"}, [photography](https://www.flickr.com/photos/thesteggie/albums){:target="_blank"}, gardening, and Wikipedia surfing in my free time.
 
 <figure>
