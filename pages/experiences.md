@@ -8,9 +8,11 @@ author_profile: true
 
 ## Work Experience
 - Sr. Software Engineer, Twitter, San Francisco, CA (January 2019 - present)
+
     Onboarding 🚀 
     - Using machine learning to improve new user experience and grow the Twitter user base.
 - R&D Engineer (Software), Sr. II, Synopsys Inc., Mountain View, CA (November 2015 - February 2018)
+
     Worked a mixed-language (SystemVerilog/VHDL) compiler for the ZeBu FPGA emulation system, including:
     - Optimization and transformation on computation graphs and circuit data structures, achieving 27% running time improvement, 11% peak memory usage reduction, 35% emulation resource reduction. (C++)
     - Automatic test data generation for time-series simulation and correctness validation, creating a seamless testing and debugging workflow, greatly reducing the iteration time for R&D and application engineers. (C++/Tcl)
