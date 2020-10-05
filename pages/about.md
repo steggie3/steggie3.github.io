@@ -6,8 +6,6 @@ classes: wide
 author_profile: true
 ---
 
-I am a software developer [seeking full-time **software engineering** positions on **machine-learning** and/or **data science**](/assets/pdf/resumes/Resume_Christine_Chen_MLE_Sep24_18.pdf){:target="_blank"}. I have worked on several related projects and taken a few courses in my spare time and am aiming to advance my career in the machine-learning and data science area.
-
 <figure>
   <img src="{{site.url}}/assets/images/about/me.png" alt="me.png"/>
   <figcaption>(Left) After holding a lecture at my high school Information Study Club (2002). (Middle) Preparing lab material for EE summer camp (2006). (Right) Presenting at a poster session at IEEE/ACM Workshop on Variability Modeling and Characterization (2013). </figcaption>
