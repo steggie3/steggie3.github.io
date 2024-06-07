@@ -7,25 +7,18 @@ author_profile: true
 ---
 
 ## Work Experience
-- Sr. Software Engineer, Twitter, San Francisco, CA (January 2019 - present)
-    - Onboarding 🚀 
-        - Using machine learning to improve new user experience and grow the Twitter user base.
-- R&D Engineer (Software), Sr. II, Synopsys Inc., Mountain View, CA (November 2015 - February 2018)
-    - Worked a mixed-language (SystemVerilog/VHDL) compiler for the ZeBu FPGA emulation system, including:
-        - Optimization and transformation on computation graphs and circuit data structures, achieving 27% running time improvement, 11% peak memory usage reduction, 35% emulation resource reduction. (C++)
-        - Automatic test data generation for time-series simulation and correctness validation, creating a seamless testing and debugging workflow, greatly reducing the iteration time for R&D and application engineers. (C++/Tcl)
-
-- Research Intern (Software), Strategic Computer-Aided Design Labs, Intel Corporation, Hillsboro, OR (August 2011 - December 2011)
-    - Investigated process variation under near-threshold voltage circuit operations.
-    - Performed numerical simulation and mathematical analysis of the most probable point theory. (C++/MATLAB)
-    - Performed experiments on discrete gate-sizing optimization. (Perl/Tcl)
+Please visit my [LinkedIn Profile](https://www.linkedin.com/in/christine-chen-67887a27/){:target="_blank"} for details.
+- AI/ML Engineer (Freelance), Iago Education, San Mateo, CA (2023 - 2024)
+- Staff ML Engineer, Twitter, San Francisco, CA (2019 - 2023)
+- R&D Engineer, Sr. II, Synopsys, Mountain View, CA (2015 - 2018)
+- Research Intern, Intel, Hillsboro, OR (2011)
 
 ## Education
 - M.S./Ph.D., Electrical and Computer Engineering, University of Illinois at Urbana-Champaign, Urbana, IL, USA (2008 - 2015)
 - B.S., Electrical Engineering, Taipei, Taiwan (2004 - 2008)
 
 ## Training Programs
-- AI Bootcamp for Machine Learning Engineers, deeplearning.ai, (July 2018) ([Certificate](/assets/images/certificates/AI_MLE.jpg){:target="_blank"})
+- AI Bootcamp for Machine Learning Engineers, deeplearning.ai (July 2018) ([Certificate](/assets/images/certificates/AI_MLE.jpg){:target="_blank"})
 
 ## MOOC
 - CSMM.102x: Machine Learning, edX/Columbia University (Completed May 2018) ([Certificate](https://courses.edx.org/certificates/f3fa5973d38f4ea792a6106cf46de430){:target="_blank"})
@@ -37,14 +30,17 @@ author_profile: true
     - Sequence Models
 
 ## Academic Experience
+- Guest Lecturer, Penn State University (2020)
+    - IST 261 Application Development Studio
+        - Software Engineering in Action [Part 1](https://www.youtube.com/watch?v=5zw1W5fg7vs), [Part 2](https://www.youtube.com/watch?v=ZM5IBjiaSYw)
 - Research Assistant, with [Prof. Deming Chen](http://dchen.ece.illinois.edu/){:target="_blank"}, University of Illinois at Urbana-Champaign (2008 - 2015)
-- Teaching Assistant, University of Illinois at Urbana-Champaign
+- Teaching Assistant, University of Illinois at Urbana-Champaign (2009 - 2014)
     - ECE 527 System-on-Chip Design
     - ECE 412 Microcomputer Laboratory
     - ECE 385 Digital Systems Laboratory
     - ECE 298 Digital System Design Laboratory
         - Developed two labs on system-on-a-chip and embedded systems, including a USB (Universal Serial Bus) driver and an AES (Advanced Encryption Standard) decryption system. (C/SystemVerilog)
-- Guest Lecturer, University of Illinois at Urbana-Champaign
+- Guest Lecturer, University of Illinois at Urbana-Champaign (2009 - 2014)
     - ECE 527, ECE 385, ECE 298
 - Reviewer
     - IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems

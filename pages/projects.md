@@ -18,9 +18,9 @@ Using Generative Adversarial Networks (GANs), including GAN, WGAN, and VAE-GAN, 
 [Python/Keras]
 Applying logistic regression, random forests, gradient-boosted decision trees ([XGBoost](https://xgboost.readthedocs.io/en/latest/){:target="_blank"}), SVM, nearest neighbors, and neural networks to predict the loan default probability. Also experimented with feature engineering techniques such as feature hashing, feature discretization with XGBoost and random forests, principal component analysis (PCA), etc. Independent project started in May 2018.
 
-## [F-RankClass](/projects/f-rankclass.html)
+## [F-RankClass](/projects/f-rankclass.html) ICDM'13
 [C++/MATLAB]
-Joint text-image document classification and mining on Wikipedia entries. This is a class project for CS512 Data Mining Principles at UIUC in Spring 2013 and has been [published at International Conference on Data Mining in December 2013](https://ieeexplore.ieee.org/abstract/document/6729588/){:target="_blank"}. 
+Graph mining for joint text-image document classification and ranking on Wikipedia entries. This is a class project for CS512 Data Mining Principles at UIUC in Spring 2013 and has been [published at International Conference on Data Mining in December 2013](https://ieeexplore.ieee.org/abstract/document/6729588/){:target="_blank"}. 
 
 ## Algorithmic Stock Trading
 [C++/MATLAB/Tensorflow]
